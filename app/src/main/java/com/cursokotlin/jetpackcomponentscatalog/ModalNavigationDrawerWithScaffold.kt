@@ -25,8 +25,8 @@ import com.cursokotlin.jetpackcomponentscatalog.utils.MyDrawer
 import kotlinx.coroutines.launch
 
 /**
- * El ``Scaffold`` es un _layout_ ``Composable`` creado para ***montar vistas de una forma más sencilla***,
- * ya que funciona como un "esqueleto" de una pantalla que sigue la estructura propuesta por _Material Design_.
+ * Sobre ``TopAppBar`` y ``Scaffold``,
+ * ver [acá](https://github.com/javier-tapia/Apuntes-y-Navaja-Suiza/blob/master/Android/UI/Jetpack%20Compose.md#slot-api--scaffold)
  */
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
@@ -47,8 +47,6 @@ fun ModalNavigationDrawerWithScaffold() {
         content = {
             Scaffold(
                 snackbarHost = { SnackbarHost(snackbarHostState) },
-                // Los paddingValues reflejan el espacio ocupado por topBar, bottomBar u otras barras del Scaffold.
-                // Si no se define ninguna barra, los valores de padding serán 0.dp.
                 content = { paddingValues ->
                     Log.d("paddingValues", "$paddingValues")
                     Column(

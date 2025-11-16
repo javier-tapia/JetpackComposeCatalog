@@ -38,8 +38,6 @@ class MainActivity : ComponentActivity() {
                             CustomSnackbar(snackbarHostState.currentSnackbarData?.visuals?.message)
                         }
                     },
-                    // Los paddingValues reflejan el espacio ocupado por topBar, bottomBar u otras barras del Scaffold.
-                    // Si no se define ninguna barra, los valores de padding serán 0.dp.
                     content = { paddingValues ->
                         InfiniteTransitionExample(paddingValues)
                     }

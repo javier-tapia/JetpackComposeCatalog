@@ -46,8 +46,7 @@ import com.cursokotlin.jetpackcomponentscatalog.utils.getSuperheroes
 import kotlinx.coroutines.launch
 
 /**
- * Para crear listas dinámicas se usan las funciones ``Composables`` ``LazyColumn`` (vertical) o ``LazyRow`` (horizontal).
- *
+ * Para crear listas dinámicas se usan ``LazyColumn`` (vertical) o ``LazyRow`` (horizontal).
  * Para añadir elementos a estas listas, se utilizan las funciones ``item`` o ``items`` (para más de un elemento).
  *
  * ``LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {...}``:
@@ -59,6 +58,12 @@ import kotlinx.coroutines.launch
  *
  * ***Sticky headers*** **(cabeceras)**: La función ``stickyHeader`` permite agregar una cabecera que permanece fija
  * hasta que la próxima cabecera ocupe su lugar.
+ *
+ * `LazyVerticalGrid`: Define un **listado de elementos en grilla vertical**. Requiere de un parámetro llamado `columns`,
+ * que define la cantidad de celdas por fila en caso de pasarle un número fijo (`GridCells.Fixed(2)`) o adaptable al tamaño
+ * mínimo definido (`GridCells.Adaptive(150.dp)`). Esto es útil para cuando el dispositivo se rota, por ejemplo.
+ *
+ * `LazyHorizontalGrid`: Lo mismo que la vertical, pero en horizontal. En lugar del parámetro `columns`, requiere uno llamado `rows`.
  */
 @Composable
 fun SimpleRecyclerView() {
