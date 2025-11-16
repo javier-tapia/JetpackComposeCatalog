@@ -7,7 +7,6 @@ Basados en el curso de Aris Guimerá, disponible en [Udemy](https://www.udemy.co
   <summary><b>🔎👇 Animations</b></summary>
 
 - [AnimateAsState](app/src/main/java/com/cursokotlin/jetpackcomponentscatalog/animations/AnimateAsState.kt)
-- [AnimateContentSize](app/src/main/java/com/cursokotlin/jetpackcomponentscatalog/animations/AnimateContentSize.kt)
 - [AnimatedContent](app/src/main/java/com/cursokotlin/jetpackcomponentscatalog/animations/AnimatedContent.kt)
 - [AnimatedVisibility](app/src/main/java/com/cursokotlin/jetpackcomponentscatalog/animations/AnimatedVisibility.kt)
 - [Crossfade](app/src/main/java/com/cursokotlin/jetpackcomponentscatalog/animations/Crossfade.kt)
