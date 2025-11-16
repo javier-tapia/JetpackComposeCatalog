@@ -21,13 +21,15 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-// El componente ***TextField*** sería el equivalente al ***EditText*** en el sistema de vistas clásico.
-// Dicho componente debe gestionar estado y recibe dos parámetros:
-// el valor que se le va a asignar y una lambda que va a retornar el valor luego de ser modificado por el usuario.
-
-// El ***OutlinedTextField*** es una variante del ***TextField*** que muestra un borde alrededor del campo.
-// Es posible modificar el color del borde dependiendo si está en foco o no.
-
+/**
+ * El componente ``TextField`` sería el equivalente al ``EditText`` en el sistema de vistas clásico.
+ *
+ * Dicho componente debe gestionar estado y recibe dos parámetros:
+ * el valor que se le va a asignar y una lambda que va a retornar el valor luego de ser modificado por el usuario.
+ *
+ * El ``OutlinedTextField`` es una variante del ``TextField`` que muestra un borde alrededor del campo.
+ * Es posible modificar el color del borde dependiendo si está en foco o no.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyTextFieldOutlined() {

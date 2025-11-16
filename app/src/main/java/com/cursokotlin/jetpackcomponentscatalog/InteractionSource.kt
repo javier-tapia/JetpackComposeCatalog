@@ -16,6 +16,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
+/**
+ * Permite **conocer el estado transitorio de un ``composable``** (presionado, arrastrado, en foco, _hovered_).
+ */
 @Composable
 fun InteractionSourceExample(modifier: Modifier = Modifier) {
     val interaction = remember { MutableInteractionSource() }

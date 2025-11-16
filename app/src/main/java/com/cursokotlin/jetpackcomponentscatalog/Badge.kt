@@ -14,6 +14,10 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 
+/**
+ * Se utiliza para mostrar información dinámica, como puede ser el número de mensajes sin leer
+ * de una *app* de *mail* o mensajería.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyBadgedBox() {

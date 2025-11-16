@@ -1,12 +1,8 @@
 package com.cursokotlin.jetpackcomponentscatalog
 
-import android.widget.Button
 import android.widget.Toast
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -26,7 +22,6 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material3.Button
-import androidx.compose.material3.Card
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -42,16 +37,29 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.cursokotlin.jetpackcomponentscatalog.model.Superhero
 import com.cursokotlin.jetpackcomponentscatalog.utils.ItemHero
 import com.cursokotlin.jetpackcomponentscatalog.utils.getSuperheroes
-import com.cursokotlin.jetpackcomponentscatalog.model.Superhero
 import kotlinx.coroutines.launch
 
+/**
+ * Para crear listas dinámicas se usan las funciones ``Composables`` ``LazyColumn`` (vertical) o ``LazyRow`` (horizontal).
+ *
+ * Para añadir elementos a estas listas, se utilizan las funciones ``item`` o ``items`` (para más de un elemento).
+ *
+ * ``LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {...}``:
+ * La función ``spacedBy`` permite agregar un espacio entre las vistas hijas del componente
+ * a través del eje principal (vertical para ``LazyColumn``, horizontal para ``LazyRow``).
+ * Si el espacio es negativo, los hijos van a superponerse.
+ *
+ * La función ``rememberLazyListState`` crea y recuerda el estado de la lista a través de las diferentes composiciones.
+ *
+ * ***Sticky headers*** **(cabeceras)**: La función ``stickyHeader`` permite agregar una cabecera que permanece fija
+ * hasta que la próxima cabecera ocupe su lugar.
+ */
 @Composable
 fun SimpleRecyclerView() {
     val myList = listOf("Aris", "Pepe", "Manolo", "Jaime")

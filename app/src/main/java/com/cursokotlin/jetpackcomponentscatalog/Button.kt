@@ -18,6 +18,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
+/**
+ * ``Button`` es el ``Composable`` que renderiza un botón. Tiene la particularidad de que debe
+ * implementar el ``onClick`` obligatoriamente.
+ *
+ * Este componente tiene otras variantes, como el ``OutlineButton`` o el ``TextButton``.
+ */
 @Composable
 fun MyButtonExample() {
     var enabled by rememberSaveable { mutableStateOf(true) }

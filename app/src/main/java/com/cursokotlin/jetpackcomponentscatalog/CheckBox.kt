@@ -26,6 +26,12 @@ import androidx.compose.ui.unit.dp
 import com.cursokotlin.jetpackcomponentscatalog.utils.CheckBoxState
 import com.cursokotlin.jetpackcomponentscatalog.utils.CheckInfo
 
+/**
+ * Se le debe ***indicar un estado*** y la ***acción a realizar*** cuando el estado del componente cambia.
+ *
+ * El ``CheckBox`` tiene la particularidad de que ***puede tener un tercer estado***, además
+ * de ``on`` y ``off``, llamado ``indeterminate``.
+ */
 @Composable
 fun ParentCheckBoxes(modifier: Modifier = Modifier) {
     var state by remember {

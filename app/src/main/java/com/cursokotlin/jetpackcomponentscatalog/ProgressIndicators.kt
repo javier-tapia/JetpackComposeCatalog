@@ -20,6 +20,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
+/**
+ * Un componente de _progress_ se usa para dar _feedback_ al usuario cuando la aplicación está realizando
+ * operaciones por detrás.
+ *
+ * Hay dos tipos de indicadores: ``LinearProgressIndicator`` y ``CircularProgressIndicator``.
+ */
 @Composable
 fun MyProgressAdvance() {
     var progressStatus by rememberSaveable { mutableStateOf(0f) }

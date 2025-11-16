@@ -22,6 +22,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+/**
+ * Se utiliza para desplegar un menú de opciones.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ExposedDrowDownMenuCustom(modifier: Modifier = Modifier) {

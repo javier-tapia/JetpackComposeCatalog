@@ -17,6 +17,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+/**
+ * Se utiliza para permitir a los usuarios hacer ***selecciones entre un rango de valores***.
+ *
+ * También está disponible un tipo especial llamado ``RangeSlider``, que amplía la funcionalidad del ``Slider``
+ * utilizando los mismos conceptos, pero permite al usuario seleccionar dos valores.
+ */
 @Composable
 fun BasicSlider() {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {

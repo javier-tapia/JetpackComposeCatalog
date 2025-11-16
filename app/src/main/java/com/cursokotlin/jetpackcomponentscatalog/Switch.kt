@@ -9,6 +9,9 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 
+/**
+ * Se le debe ***indicar un estado*** y la ***acción a realizar*** cuando el estado del componente cambia.
+ */
 @Composable
 fun MySwitch() {
     var state by rememberSaveable { mutableStateOf(false) }

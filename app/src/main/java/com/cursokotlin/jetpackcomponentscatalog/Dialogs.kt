@@ -39,6 +39,11 @@ import com.cursokotlin.jetpackcomponentscatalog.utils.AccountItem
 import com.cursokotlin.jetpackcomponentscatalog.utils.MyRadioButtonList
 import java.util.Calendar
 
+/**
+ * Permite mostrar un diálogo en base al diseño que se especifique.
+ *
+ * El ``AlertDialog`` ya implementa por defecto un título, una descripción y dos botones.
+ */
 @Composable
 fun MyConfirmationDialog(
     show: Boolean,
@@ -223,7 +228,9 @@ fun MyTimePicker(modifier: Modifier = Modifier) {
             onDismissRequest = {showTimePickerState = false}
         ) {
             Column(
-                modifier = Modifier.background(Color.White).padding(24.dp)
+                modifier = Modifier
+                    .background(Color.White)
+                    .padding(24.dp)
             ) {
                 TimePicker(
                     state = timePickerState,

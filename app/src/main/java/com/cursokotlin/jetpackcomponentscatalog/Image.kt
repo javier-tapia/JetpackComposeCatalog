@@ -13,6 +13,16 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
+/**
+ * Se pueden visualizar todos los íconos disponibles [aquí](https://fonts.google.com/icons).
+ *
+ * Pero para utilizar todos esos íconos en un proyecto, es necesario agregar la siguiente dependencia
+ * al ``build.gradle(:app)``:
+ *
+ * ```kotlin
+ * implementation "androidx.compose.material:material-icons-extended:$compose_version"
+ * ```
+ */
 @Composable
 fun MyIcon() {
     Icon(

@@ -24,6 +24,10 @@ import androidx.compose.ui.Modifier
 import com.cursokotlin.jetpackcomponentscatalog.utils.MyDrawer
 import kotlinx.coroutines.launch
 
+/**
+ * El ``Scaffold`` es un _layout_ ``Composable`` creado para ***montar vistas de una forma más sencilla***,
+ * ya que funciona como un "esqueleto" de una pantalla que sigue la estructura propuesta por _Material Design_.
+ */
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable

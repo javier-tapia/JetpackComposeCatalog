@@ -9,6 +9,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 
+/**
+ * Se le debe ***indicar un estado*** y la ***acción a realizar*** cuando el estado del componente cambia.
+ */
 @Composable
 fun MyRadioButton() {
     Row(Modifier.fillMaxWidth()) {

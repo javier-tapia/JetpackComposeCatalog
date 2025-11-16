@@ -14,6 +14,9 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
+/**
+ * Una ``Card`` es simplemente una ``Surface`` con valores por defecto (``elevation``, ``shape``, etc).
+ */
 @Composable
 fun MyCard() {
     Card(
