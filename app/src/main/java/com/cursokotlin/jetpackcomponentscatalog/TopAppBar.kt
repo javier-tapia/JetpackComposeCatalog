@@ -13,6 +13,10 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
+/**
+ * Sobre ``TopAppBar`` y ``Scaffold``,
+ * ver [acá](https://github.com/javier-tapia/Apuntes-y-Navaja-Suiza/blob/master/Android/UI/Jetpack%20Compose.md#slot-api--scaffold)
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyTopAppBar(onClickIcon: (String) -> Unit, onClickDrawer: () -> Unit) {
